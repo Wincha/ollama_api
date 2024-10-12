@@ -1,0 +1,52 @@
+{
+	"info": {
+		"_postman_id": "f2a5b8ad-bb51-4237-8062-4c2eda6db1d9",
+		"name": "AI - API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23601991"
+	},
+	"item": [
+		{
+			"name": "test",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3030",
+					"host": [
+						"localhost"
+					],
+					"port": "3030"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"query\": \"Hola, cuentame un chiste\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3030/chat",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"chat"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
